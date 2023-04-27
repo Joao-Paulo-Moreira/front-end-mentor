@@ -3,12 +3,14 @@
 
 
 :root{
+    --black: #131313;
     --Cyan: #65e2d9;
     --Blue: #339ecc;
     --Dark-Blue: #181f2a;
     --Main-Dark-Blue: #1B2230;
     --Dark-Blue-02: #0b1523;
     --Testimonials-Dark-Blue: #202a3c;
+    --footer-color: #0f192a;
     --white: #ffff;
     --action-font: 'Raleway';
     --page-font: 'Open Sans';
@@ -250,4 +252,76 @@ ion-icon.md.hydrated {
     font-family: var(--page-font);
     color: var(--white);
     font-size: 14px;
+}
+
+.contact_box{
+    width: 50%;
+    margin: 0 auto;
+    margin-top:50px;
+    box-shadow: 2px 2px 7px var(--black);
+    padding: 35px;
+    background-color: var(--Main-Dark-Blue);
+    border-radius: 3px;
+}
+
+.contact_box > h3 {
+    color: var(--white);
+    text-align: center;
+    font-size: 19px;
+    font-family: var(--page-font);
+}
+
+.contact_box > p {
+    font-size: 14px;
+    font-family: var(--page-font);
+    color: var(--white);
+    text-align: center;
+    padding: 25px;
+}
+
+.email_button_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.email_edit {
+    width: 265px;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: var(--page-font);
+    padding: 5px;
+    border: none;
+}
+
+.email_edit:focus{
+    border-left: 2px solid var(--Blue);
+    border-right: 2px solid var(--Blue);
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.button_get_started_for_free {
+    width: 165px;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: var(--Blue);
+    color: var(--white);
+    border: none;
+    font-size: 14px;
+    font-family: var(--action-font);
+}
+
+.button_get_started_for_free:hover {
+    background-color: var(--Cyan);
+    color: var(--Dark-Blue);
+    transition: .5s;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer{
+    background-color: var(--footer-color);
 }
