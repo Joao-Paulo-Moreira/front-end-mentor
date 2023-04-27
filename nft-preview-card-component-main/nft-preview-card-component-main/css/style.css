@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: hsl(217deg, 54%, 11%);
+}
+
+.cardAll {
+  margin: 0 auto;
+  border-radius: 15px;
+  max-width: 250px;
+  height: 500px;
+  background-color: hsl(216deg, 50%, 16%);
+  padding: 15px;
+}
+.cardAll .cardImage {
+  text-align: center;
+}
+.cardAll .cardImage .overlay {
+  background-color: hsla(178deg, 100%, 50%, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 14px;
+  width: 250px;
+  height: 250px;
+  opacity: 0;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.cardAll .cardImage .overlay:hover {
+  opacity: 1;
+}
+.cardAll .cardImage .imagem {
+  border-radius: 10px;
+  width: 250px;
+  transition: 0.5s;
+}
+.cardAll .cardContent h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  transition: 0.5s;
+}
+.cardAll .cardContent h1:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}
+.cardAll .cardContent p {
+  color: hsl(215deg, 51%, 70%);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+}
+.cardAll .cardContent .price {
+  display: flex;
+  justify-content: space-between;
+}
+.cardAll .cardContent .price .price {
+  color: hsl(178deg, 100%, 50%);
+  font-size: 12px;
+  line-height: 30px;
+}
+.cardAll .cardContent .price .price img {
+  margin-right: 5px;
+}
+.cardAll .cardContent .price .time {
+  color: hsl(215deg, 51%, 70%);
+  font-size: 12px;
+  line-height: 30px;
+}
+.cardAll .cardContent .price .time img {
+  margin-right: 5px;
+}
+.cardAll .line {
+  padding: 15px 0px;
+  border-bottom: 2px solid hsl(215deg, 51%, 70%);
+}
+.cardAll .creation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+.cardAll .creation img {
+  width: 35px;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+.cardAll .creation .creationName {
+  font-size: 15px;
+  color: hsl(215deg, 51%, 70%);
+}
+.cardAll .creation .creationName span {
+  color: white;
+  transition: 0.5s;
+}
+.cardAll .creation .creationName span:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

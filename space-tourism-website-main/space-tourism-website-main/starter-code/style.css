@@ -1,0 +1,22 @@
+header {
+   margin: 15px;
+}
+
+.menuAll > ul {
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+   border: 1px solid white;
+   height: 50px;
+   width: 500px;
+   background: rgba(255, 255, 255, 0.22);
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(5.8px);
+   -webkit-backdrop-filter: blur(5.8px);
+   border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.menuAll > ul >li > a {
+   text-decoration: none;
+   color: white;
+}

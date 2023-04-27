@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+$softBlue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$veryDarkBlue1: hsl(217, 54%, 11%);
+$veryDarkBlue2: hsl(216, 50%, 16%);
+$veryDarkBlue3: hsl(215, 32%, 27%);
+
+*{
+   margin: 0;
+   padding: 0;
+   font-family: 'Outfit', sans-serif;
+}
+
+body{
+   background-color: $veryDarkBlue1;
+}
+
+.cardAll{
+   margin: 0 auto;
+   border-radius: 15px;
+   max-width: 250px;
+   height: 500px;
+   background-color: $veryDarkBlue2;
+   padding: 15px;
+
+   .cardImage{
+      text-align: center;
+      .overlay {
+         background-color: hsla(178, 100%, 50%, 0.5);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         position: absolute;
+         top: 14px;
+         width: 250px;
+         height: 250px;
+         opacity: 0;
+         border-radius: 10px;
+         transition: .5s;
+         &:hover{
+            opacity: 1;
+         }
+      }
+      .imagem{
+         border-radius: 10px;
+         width: 250px;
+         transition: .5s;
+      }
+   }
+
+   .cardContent{
+      h1{
+         color: white;
+         font-weight: 400;
+         font-size: 20px;
+         line-height: 50px;
+         transition: .5s;
+         &:hover{
+            color: $cyan;
+            cursor: pointer;
+         }
+      }
+
+      p{
+         color: $softBlue;
+         font-size: 15px;
+         font-weight: 300;
+         line-height: 30px;
+      }
+
+      .price{
+         display: flex;
+         justify-content: space-between;
+         .price{
+            color: $cyan;
+            font-size: 12px;
+            line-height: 30px;
+            img{
+               margin-right: 5px;
+            }
+         }
+         .time{
+            color: $softBlue;
+            font-size: 12px;
+            line-height: 30px;
+            img{
+               margin-right: 5px;
+            }
+         }
+      }
+   }
+
+   .line{
+      padding: 15px 0px;
+      border-bottom: 2px solid $softBlue;
+   }
+
+   .creation{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 25px;
+      img{
+         width: 35px;
+         border: 1px solid white;
+         border-radius: 100%;
+      }
+
+      .creationName{
+         font-size: 15px;
+         color: $softBlue;
+         span{
+            color: white;
+            transition: .5s;
+            &:hover{
+               color: $cyan;
+               cursor: pointer;
+            }
+         }
+      }
+   }
+}
