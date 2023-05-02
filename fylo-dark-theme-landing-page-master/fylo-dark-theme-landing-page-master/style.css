@@ -139,9 +139,12 @@ button#GetStarted:hover{
     padding-bottom: 20px;
 }
 
-ion-icon.md.hydrated {
-    color: var(--Blue);
-    font-size: 3rem;
+.circle{
+    width: 10px;
+    height: 10px;
+    background-color: var(--Blue);
+    border-radius: 100%;
+    margin: 5px;
 }
 
 
@@ -196,6 +199,8 @@ ion-icon.md.hydrated {
     color: var(--Blue);
     font-size: 14px;
     font-family: var(--action-font);
+    display: flex;
+    align-items: center;
 }
 
 .fyloWorksTextContent > a:hover {
@@ -225,6 +230,7 @@ ion-icon.md.hydrated {
     padding: 25px 20px;
     border-radius: 5px;
     z-index: 999;
+    margin: 2px 3px;
 }
 
 .declarationArticles > .textDeclaration > p{
@@ -236,6 +242,7 @@ ion-icon.md.hydrated {
 .declarationArticles > .declarationPerson {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .declarationArticles > .declarationPerson > .personImg {
@@ -255,6 +262,8 @@ ion-icon.md.hydrated {
 }
 
 .contact_box{
+    position: relative;
+    top: 116px;
     width: 50%;
     margin: 0 auto;
     margin-top:50px;
@@ -324,4 +333,51 @@ ion-icon.md.hydrated {
 
 footer{
     background-color: var(--footer-color);
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 150px 0px 25px;
+}
+
+.company-addres{
+    width: 20%;
+}
+
+.company-addres-txt > p, .contact > p, .footer-menu > p, .contact-terms-privacy > p, .fi{
+    padding-top: 10px;
+    color: var(--white);
+    font-family: var(--page-font);
+    font-size: 14px;
+}
+
+.social-media-icon {
+    display: flex;
+    justify-content: center;
+}
+
+i.fi {
+    padding: 6px;
+    border: 1px solid var(--white);
+    margin: 7px;
+    border-radius: 100%;
+}
+
+.attribution { 
+    font-size: 14px; 
+    text-align: center; 
+    font-family: var(--page-font);
+    color: var(--white);
+}
+
+.attribution > a {
+    font-size: 14px; 
+    font-family: var(--page-font);
+    color: var(--white);
+}
+
+@media only screen and (max-width: 900px){
+    
 }
