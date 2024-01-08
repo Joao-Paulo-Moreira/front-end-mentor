@@ -58,5 +58,5 @@ body{
     padding-right: 10px;
 }
 
-.attribution { font-size: 11px; text-align: center;  padding-top: 10%;}
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: 14px; text-align: center;  padding-top: 10%;}
+.attribution a { color: var(--Black); }
