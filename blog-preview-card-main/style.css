@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+/*font-family: 'Figtree', sans-serif; bold= 600 and 800*/
+
+:root{
+    --yellow-bg: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    --font: 'Figtree', sans-serif;
+}
+
+body{
+    background-color: var(--yellow-bg);
+}
+
+.card-total{
+    margin: 0 auto;
+    padding: 10px;
+    background-color: var(--White);
+    width: 335px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid var(--Black);
+    border-radius: 10px;
+    box-shadow: 10px 10px var(--Black);
+}
+
+.article-text > h2 {
+    background-color: var(--yellow-bg);
+    width: 69px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 800;
+    font-family: var(--font);
+}
+
+.article-text > p {
+    font-weight: 600;
+    font-size: 15px;
+    font-family: var(--font);
+}
+
+.article-writer{
+    display: flex;
+    flex-direction: row;
+    font-size: 17px;
+    font-weight: 800;
+    font-family: var(--font);
+    align-items: center;
+}
+
+.article-writer > img {
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+}
+
+.attribution { font-size: 11px; text-align: center;  padding-top: 10%;}
+.attribution a { color: hsl(228, 45%, 44%); }
