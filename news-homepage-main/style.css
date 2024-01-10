@@ -66,7 +66,7 @@ body{
 
   .column-txt > h1 {
     width: 34%;
-    font-size: 50px;
+    font-size: 3rem;
     letter-spacing: .5px;
     font-weight: 800;
     font-family: 'Inter', sans-serif
@@ -143,10 +143,6 @@ section.first-information {
   align-items: center;
 }
 
-.box-image > img {
-  width: 95%;
-}
-
 .content-box > h2, h3, p {
   padding: 10px;
 }
@@ -163,6 +159,42 @@ section.first-information {
 .content-box > p {
   color: var(--Dark-grayish-blue);
   font-size: 18px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-config {
+      display: grid;
+      grid-template-columns: 2fr;
+  }
+
+  .second-information {
+    width: 100%;
+  }
+
+  .box-group {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+  width: 715px;
+}
+
+.column-txt > h1 {
+  font-size: 2.5rem;
+}
+
+.column-txt {
+  padding: 15px 0px 10px;
+}
+
+}
+
+@media only screen and (max-width: 810px) {
+  .column-txt > h1 {
+    font-size: 2rem;
+  } 
 }
 
   @media only screen and (max-width: 768px) {
@@ -189,7 +221,37 @@ section.first-information {
       position: absolute;
       cursor: pointer;
      } 
+
+     .box > .box-image > img {
+      width: 140px;
+    }
+  
+    .content-box > h3 {
+      font-size: 24px;
   }
+
+  .content-box > h2 {
+    font-size: 1rem;
+  }
+
+  content-box > p {
+    font-size: 1rem;
+  }
+
+  .content-box > h2, h3, p {
+      padding: 4px 10px;
+      margin: 10px 0px;
+  }
+
+  .column-txt > h1 {
+    font-size: 1.5rem;
+  } 
+
+  .paragraph-button {
+    width: 65%;
+}
+
+}
 
 .attribution { font-size: 16px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
